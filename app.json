@@ -8,19 +8,25 @@
     "scheme": "loanapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "updates": {
+      "url": "https://u.expo.dev/0a3ab837-6c3b-4d7e-8f38-92195b394440",
+      "enabled": true,
+      "fallbackToCacheTimeout": 30000
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.kegoya.loanapp",
       "adaptiveIcon": {
-        "backgroundColor": "#020617", // Matches your Dark Mode background
-        "edgeToEdgeEnabled": true,
+        "backgroundColor": "#020617",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      }
     },
     "web": {
       "bundler": "metro",
@@ -46,6 +52,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0a3ab837-6c3b-4d7e-8f38-92195b394440"
+      }
     }
   }
 }
